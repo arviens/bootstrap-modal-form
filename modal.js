@@ -67,7 +67,7 @@
 
     function onJsModalClick(event) {
         var elem = $(this);
-        var contentUrl = elem.data('url') || elem.attr('href');
+        var contentUrl = elem.attr('data-url') || elem.attr('href');
         changeDialogClass(null, elem.data('size') || '');
         $(document).trigger('bsmodal.js-modal.clicked', [elem]);
 
